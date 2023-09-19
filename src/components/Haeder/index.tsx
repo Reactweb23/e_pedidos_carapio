@@ -3,9 +3,9 @@ import { Information } from "../Information"
 
 export const Header = () => {
     return (
-        <header className="flex flex-col bg-slate-200 relative  overflow-x-hidden">
+        <header className="flex flex-col bg-slate-200 relative  overflow-x-hidden z-0 h-52">
             <div className="flex items-center w-screen justify-between">
-                <div className="flex flex-col gap-1 ">
+                <div className="flex flex-col gap-1 mb-6 ml-5">
                     <div className="flex items-center gap-1">
                         <Image
                             height={18}
@@ -36,13 +36,12 @@ export const Header = () => {
                 </div>
                 <h1 className="text-lg font-medium" >E-Pedidos</h1>
                 <Image
-                    height={80}
-                    width={80}
+                    height={122}
+                    width={122}
                     src="/logo.svg"
                     alt="logo"
                 />
             </div>
-            <Information />
         </header>
     )
 }

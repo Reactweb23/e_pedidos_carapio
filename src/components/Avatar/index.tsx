@@ -2,13 +2,8 @@ import Image from "next/image"
 
 export const Avatar = () =>{
     return(
-        <div>
-            <Image
-                height={40}
-                width={40}
-                src='/logo.svg'
-                alt="avatar" 
-            />
+        <div className="rounded-full h-20 w-20 border-blue-500 border-4">
+            
         </div>
     )
 }
