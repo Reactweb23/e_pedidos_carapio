@@ -3,9 +3,13 @@ import { Information } from "@/components/Information";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
+    <>
       <Information />
-      <Emphasis />
-    </main>
+      <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
+        <section id="emphasis">
+          <Emphasis />
+        </section>
+      </main>
+    </>
   )
 }
