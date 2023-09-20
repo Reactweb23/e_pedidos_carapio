@@ -1,6 +1,7 @@
 import { CardList } from "@/components/Card/CardList";
 import { Emphasis } from "@/components/Emphasis";
 import { Information } from "@/components/Information";
+import { Menu } from "@/components/Menu";
 
 export default function Home() {
   return (
@@ -11,12 +12,9 @@ export default function Home() {
           <Emphasis />
         </section>
         <section id="menu" className="bg-white h-screen w-full">
-          <div className="custom-border pl-8 p-5">
-            <h1 className="text-sm font-medium">
-              Pratos
-            </h1>
-          </div>
-          <CardList />
+          <Menu title="Pratos"/>
+          <Menu title="Sobremesas"/>
+          <Menu title="Lanches"/>
         </section>
       </main>
     </>

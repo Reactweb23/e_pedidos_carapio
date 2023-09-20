@@ -28,17 +28,15 @@ export const CardList = () => {
                 <span className="text-green-600">
                     R$ 20,99
                 </span>
-                <div className="flex gap-2 mr-16">
+                <div className="flex gap-2 mr-16 pr-8">
                     <button
                         className="text-gray-500 text-sm"
                     >
                         -
                     </button>
-                    <input
-                        type='number'
-                        value={0}
-                        className="w-8 border border-gray-500 rounded text-center"
-                    />
+                    <div className="w-8 border border-gray-500 rounded text-center">
+                        0
+                    </div>
                     <button
                         className="text-gray-500"
                     >
