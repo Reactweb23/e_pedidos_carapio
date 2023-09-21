@@ -1,5 +1,4 @@
 import { Emphasis } from "@/components/Emphasis";
-import { Footer } from "@/components/Footer";
 import { Information } from "@/components/Information";
 import { Menu } from "@/components/Menu";
 
@@ -17,7 +16,6 @@ export default function Home() {
           <Menu title="Lanches" />
         </section>
       </main>
-      <Footer />
     </>
   )
 }

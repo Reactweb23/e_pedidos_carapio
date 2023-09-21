@@ -1,6 +1,20 @@
+'use client'
 import Image from "next/image"
+import { useState } from "react"
 
 export const CardList = () => {
+    const [count, setCount] = useState<number>(0)
+
+    const handleAdd = ()=>{
+        setCount(prev=> prev+1);
+    }
+
+    const handleLess = ()=>{
+        if(count > 0){
+            setCount(prev=> prev-1);
+        }
+    }
+
     return (
         <div className="flex-col bg-white px-7 py-3 items-center justify-between gap-4 custom-border">
             <div className="flex items-center">
@@ -31,15 +45,17 @@ export const CardList = () => {
                 <div className="flex gap-2 mr-16 pr-8">
                     <button
                         className="text-gray-500 text-sm"
+                        onClick={handleLess}
                     >
                         -
                     </button>
                     <div className="w-8 border border-gray-500 rounded text-center">
-                        0
+                        {count}
                     </div>
                    
                     <button
                         className="text-gray-500"
+                        onClick={handleAdd}
                     >
                         +
                     </button>
