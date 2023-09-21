@@ -37,6 +37,7 @@ export const CardList = () => {
                     <div className="w-8 border border-gray-500 rounded text-center">
                         0
                     </div>
+                   
                     <button
                         className="text-gray-500"
                     >
