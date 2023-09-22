@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="bg-white flex items-center justify-center gap-10 w-full p-3 fixed bottom-0 custom-border-top">
       <div className="group relative">
-        <Link href='/'>
+        <Link href='/' prefetch>
           <Image
             height={20}
             width={20}
@@ -19,6 +19,7 @@ export const Footer = () => {
       <div className="group relative">
         <Link
           href='/orders'
+          prefetch
         >
           <Image
             height={18}

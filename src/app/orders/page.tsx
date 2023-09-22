@@ -1,5 +1,6 @@
 import { Avatar } from "@/components/Avatar";
 import { CardOrders } from "@/components/Card/CardOrder";
+import { FormsOrder } from "@/components/Form";
 import { Information } from "@/components/Information";
 import Image from "next/image";
 
@@ -29,12 +30,7 @@ export default function OrdersPage() {
                     <CardOrders />
                     <CardOrders />
                 </div>
-                <div className="flex items-center m-2 mt-4">
-                    <h3>Deseja enviar seu pedido?</h3>
-                    <button className="bg-blue-500 p-2 rounded-2xl text-white font-medium ml-3">
-                        Enviar
-                    </button>
-                </div>
+                <FormsOrder />
             </section>
         </main>
     )
