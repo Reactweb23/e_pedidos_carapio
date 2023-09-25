@@ -1,14 +1,12 @@
-import { Avatar } from "@/components/Avatar";
 import { CardOrders } from "@/components/Card/CardOrder";
 import { FormsOrder } from "@/components/Form";
-import { Information } from "@/components/Information";
 import Image from "next/image";
 
 export default function OrdersPage() {
     return (
         <main className="bg-white flex-col items-center overflow-x-hidden h-full w-full">
             <section
-                className="p-4 w-full h-screen"
+                className="p-2 w-full h-screen mb-16"
             >
                 <div className="flex items-center gap-9 mb-4 justify-center">
                     <h2 className="text-lg font-medium">
@@ -25,7 +23,9 @@ export default function OrdersPage() {
                     <h3 className="font-medium">Total:</h3>
                     <p>R$ 68,25</p>
                 </div>
-                <div className="h-3/5 w-full border flex-col border-blue-500 rounded-lg p-2 overflow-auto">
+                <div className="h-3/6 w-full border flex-col border-blue-500 rounded-lg p-2 overflow-auto mb-1">
+                    <CardOrders />
+                    <CardOrders />
                     <CardOrders />
                     <CardOrders />
                     <CardOrders />
