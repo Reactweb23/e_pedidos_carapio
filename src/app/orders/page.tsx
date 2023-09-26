@@ -6,7 +6,7 @@ export default function OrdersPage() {
     return (
         <main className="bg-white flex-col items-center overflow-x-hidden h-full w-full">
             <section
-                className="p-2 w-full h-screen mb-16"
+                className="p-2 w-full h-screen mb-28"
             >
                 <div className="flex items-center gap-9 mb-4 justify-center">
                     <h2 className="text-lg font-medium">
